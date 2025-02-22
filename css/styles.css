@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40%;
+  height: auto;
+}
+
+.menu {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content h1 {
+  height: 400px;
+  background: url(../images/why.avif) no-repeat top/cover;
+  font-size: 0;
+}
+
+.content .bg {
+  height: 500px;
+  background: url("../images/s.avif") no-repeat center/cover;
+}
+
+.content .content {
+  height: 500px;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content .content .slogo {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 300px;
+  height: 300px;
+  background: url("../images/slogo.avif") no-repeat center top/cover;
+}
+
+.content .content h2 {
+  font-size: 40px;
+  float: right;
+  padding-top: 100px;
+  width: 500px;
+  text-align: right;
+  animation: title 1s ease-in-out;
+}
+
+.content .content p {
+  margin-top: 50px;
+  float: right;
+  width: 500px;
+  text-align: right;
+  font-size: 18px;
+  animation: subTitle 1s ease-in-out;
+}
+
+/* 颜色 */
+.color .bg {
+  height: 600px;
+  background: url(../images/code.avif) no-repeat center/cover;
+}
+
+.color .content {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #002FA7;
+  display: flex;
+  place-items: center;
+  display: grid;
+}
+
+.color .content .yvesklein {
+  width: 300px;
+  height: 300px;
+  background: url(../images/yvesklein.avif) no-repeat center/cover;
+}
+
+.color .content h2 {
+  font-size: 40px;
+  float: left;
+  text-align: left;
+  color: #ffffff;
+}
+
+.color .content p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* 域名 */
+.domain .bg {
+  height: 600px;
+  background: url(../images/domain.avif) no-repeat center/cover;
+}
+
+.domain .content {
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: url(../images/shedusw.avif) no-repeat center/cover;
+}
+
+.domain .content .phone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 350px;
+  height: 300px;
+}
+
+.domain .content h2 {
+  font-size: 40px;
+  float: right;
+  padding-top: 100px;
+  width: 500px;
+  text-align: right;
+}
+
+.domain .content p {
+  margin-top: 50px;
+  float: right;
+  width: 500px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.content .bg,
+.color .bg,
+.domain .bg {
+  background-attachment: fixed;
+}
+
+@keyframes title {
+  from {
+    transform: translateY(-50px)
+  }
+
+  to {}
+}
+
+@keyframes subTitle {
+  from {
+    transform: translateY(50px)
+  }
+
+  to {}
+}
+
+/* 底部 */
+.footer {
+  height: 120px;
+  background: #002FA7;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 50px;
+  color: #ffffff;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  place-items: center;
+  display: grid;
+}
+
+.title img {
+  width: 30%;
+  height: auto;
+}
+
+.title p {
+  font-size: 16px;
+  color: #888888;
+}
+
+.wish p {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  margin-right: 30px;
+}
+
+.service p {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  margin-right: 30px;
+}
+
+.task p {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  margin-right: 30px;
+}
+
+.honor p {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  margin-right: 30px;
+}
+
+.container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section {
+  width: 100%;
+  min-height: 800px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s ease, transform 1s ease;
+  text-align: center;
+  background-image: url('../images/s.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section img {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #333333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vi {
+  width: 100%;
+  min-height: 800px;
+  text-align: center;
+  background-image: url('../images/vi.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.vixbox {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-image: url('../images/');
+  background-size: cover;
+  background-position: center;
+  background-color: #e3e3e3;
+}
+
+.building {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background-image: url('../images/building.avif');
+  background-size: cover;
+  background-position: center;
+  background-color: #e3e3e3;
+  background-attachment: fixed;
+}
+
+.standard {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background-image: url('../images/standard.avif');
+  background-size: cover;
+  background-position: center;
+  background-color: #e3e3e3;
+  background-attachment: fixed;
+}
+
+.passion {
+  width: 600px;
+  height: 650px;
+}
+
+.examine {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  background-image: url('../images/examine.avif');
+  background-size: cover;
+  background-position: center;
+  background-color: #e3e3e3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  min-height: 700px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s ease, transform 1s ease;
+  text-align: center;
+  background-image: url('../images/fontdesign.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #333333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
