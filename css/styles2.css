@@ -45,13 +45,13 @@ body {
 .menuone {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 100px;
+  margin-right: 25px;
 }
 
 .menutow {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .menustyles {
@@ -61,7 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid #8d8d8d;
+  border: 1px solid #b8b8b8;
 }
 
 .menustyles p {
