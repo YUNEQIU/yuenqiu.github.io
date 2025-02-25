@@ -38,6 +38,12 @@ body {
   justify-content: flex-end;
 }
 
+.video {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+
 .content h1 {
   height: 400px;
   background: url(../images/why.avif) no-repeat top/cover;
@@ -125,7 +131,7 @@ body {
 }
 
 .domain .content {
-  height: 800px;
+  height: 1100px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -328,7 +334,7 @@ body {
 
 .examine {
   width: 100%;
-  height: 800px;
+  height: 950px;
   display: flex;
   background-image: url('../images/examine.avif');
   background-size: cover;
