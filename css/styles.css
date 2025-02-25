@@ -39,9 +39,10 @@ body {
 }
 
 .video {
-    width: 70%;
+    width: 80%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
 }
 
 .content h1 {
