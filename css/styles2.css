@@ -71,6 +71,12 @@ body {
   padding: 0;
 }
 
+.video {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
 .yjuddfjywm img {
   width: 50%;
   height: auto;
@@ -100,37 +106,11 @@ body {
 .vi {
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.vione {
+.vi img {
   width: 60%;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-}
-
-.vitwo {
-  width: 100%;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-}
-
-.vithree {
-  width: 100%;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
-}
-
-.vifour {
-  width: 100%;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
+  height: auto;
 }
 
 .footer {
