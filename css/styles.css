@@ -167,7 +167,9 @@ body {
     transform: translateY(-50px)
   }
 
-  to {}
+  to {
+    transform: translateY(-0px)
+  }
 }
 
 @keyframes subTitle {
@@ -175,7 +177,9 @@ body {
     transform: translateY(50px)
   }
 
-  to {}
+  to {
+    transform: translateY(0px)
+  }
 }
 
 /* 底部 */
