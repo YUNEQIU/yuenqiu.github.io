@@ -70,6 +70,7 @@ body {
   width: 300px;
   height: 300px;
   background: url("../images/slogo.avif") no-repeat center top/cover;
+  animation: floatUpDown 3s ease-in-out infinite;
 }
 
 .content .content h2 {
@@ -137,14 +138,6 @@ body {
   margin: 0 auto;
   position: relative;
   background: url(../images/shedusw.avif) no-repeat center/cover;
-}
-
-.domain .content .phone {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 350px;
-  height: 300px;
 }
 
 .domain .content h2 {
@@ -371,4 +364,10 @@ body {
 .section.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes floatUpDown {
+  50% {
+    transform: translateY(-40px);
+  }
 }
