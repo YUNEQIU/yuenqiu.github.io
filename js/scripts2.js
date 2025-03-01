@@ -72,13 +72,12 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
   const div = document.querySelector('.xinkaishi');
-  const divPosition = div.getBoundingClientRect().top;  // 获取元素距离视口顶部的距离
-  const windowHeight = window.innerHeight;  // 获取视口高度
+  const divPosition = div.getBoundingClientRect().top; // 获取元素距离视口顶部的距离
+  const windowHeight = window.innerHeight; // 获取视口高度
   
-  // 当元素滚动到视口范围内时，改变它的位置和透明度
-  if (divPosition < windowHeight * 0.8) {  // 元素滚动到距离视口80%时触发
-    div.style.opacity = 1;  // 使元素变得可见
-    div.style.transform = 'translateY(0)';  // 使元素回到原始位置
+  if (divPosition < windowHeight) {
+    div.style.opacity = 1;
+    div.style.transform = 'translateY(0)'; // 当滚动到元素时，透明度变为1，移动到原位置
   }
 });
 
@@ -115,5 +114,19 @@ window.addEventListener('scroll', function() {
   if (divPosition < windowHeight * 0.8) {  // 元素滚动到距离视口80%时触发
     div.style.opacity = 1;  // 使元素变得可见
     div.style.transform = 'translateY(0)';  // 使元素回到原始位置
+  }
+});
+
+window.addEventListener('scroll', function() {
+  const element = document.getElementById('scrollEffect');
+  const scrollY = window.scrollY; // 当前滚动的垂直位置
+  const rect = element.getBoundingClientRect();
+  
+  // 让元素在视口内滚动时才出现
+  if (rect.top < window.innerHeight && rect.bottom >= 0) {
+    const scaleValue = Math.max(1, 0 - scrollY / 1000); // 控制缩放程度
+    const opacityValue = Math.min(1, (scrollY - rect.top + window.innerHeight) / window.innerHeight); // 控制透明度
+    element.style.transform = `scale(${scaleValue})`;
+    element.style.opacity = opacityValue;
   }
 });
