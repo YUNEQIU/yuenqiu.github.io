@@ -97,9 +97,7 @@ body {
 .bg .codefont {
   opacity: 0;
   transform: translateY(200px);
-  /* 初始状态：下移100px，透明度为0 */
   transition: opacity 5s, transform 5s;
-  /* 缓慢过渡效果 */
 }
 
 .bg .codefont h1 {
@@ -142,11 +140,8 @@ body {
   height: 300px;
   background: url(../images/yvesklein.avif) no-repeat center/cover;
   opacity: 0;
-  /* 初始状态完全透明 */
   transform: scale(0.1);
-  /* 初始状态缩小为50% */
   transition: opacity 3s ease, transform 3s ease;
-  /* 缓动过渡效果 */
 }
 
 .color .content h2 {
@@ -177,11 +172,8 @@ body {
   height: auto;
   padding-top: 100px;
   opacity: 0;
-  /* 初始状态透明 */
   transform: translateY(-150px);
-  /* 初始位置：向上偏移50px */
   transition: transform 8s ease, opacity 5s ease;
-  /* 缓动过渡效果 */
 }
 
 .domain .content {
@@ -196,8 +188,8 @@ body {
   width: 100%;
   height: auto;
   opacity: 0;
-  transform: translateY(200px);  /* 初始状态：下移100px，透明度为0 */
-  transition: opacity 2s, transform 3s; /* 缓慢过渡效果 */
+  transform: translateY(200px);
+  transition: opacity 2s, transform 3s;
 }
 
 .xinkaishi img {
@@ -279,48 +271,48 @@ body {
 }
 
 
- .button {
-    width: 100px;
-    height: auto;
-    position: relative;
-    padding: 10px 10px;
-    font-size: 20px;
-    color: black;
-    background: white;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
-    transition: color 0.1s ease;
-    z-index: 1;
-    margin-left: 20px;   
-  }
+.button {
+  width: 100px;
+  height: auto;
+  position: relative;
+  padding: 10px 10px;
+  font-size: 20px;
+  color: black;
+  background: white;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  transition: color 0.1s ease;
+  z-index: 1;
+  margin-left: 20px;
+}
 
-  .button::before {
-    content: "";
-    position: absolute;
-    width: 300%;
-    height: 300%;
-    top: 100%;
-    left: -100%;
-    background: rgba(128, 0, 128, 0.8);
-    transition: transform 0.5s ease, background 1.5s ease;
-    transform: translateY(0%);
-    z-index: -1;
-  }
+.button::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 100%;
+  left: -100%;
+  background: rgb(0, 183, 255);
+  transition: transform 0.5s ease, background 1.5s ease;
+  transform: translateY(0%);
+  z-index: -1;
+}
 
-  .button:hover::before {
-    color: #ffffff;
-    transform: translateY(-100%);
-    background: rgba(0, 47, 167, 1);
-  }
+.button:hover::before {
+  color: #ffffff;
+  transform: translateY(-100%);
+  background: rgba(0, 47, 167, 1);
+}
 
-  .button:hover {
-    font-weight: bold;
-    color: white;
-  }
+.button:hover {
+  font-weight: bold;
+  color: white;
+}
 
 .container {
   padding: 50px 0;
@@ -408,12 +400,8 @@ body {
   padding-top: 200px;
   padding-left: 200px;
   opacity: 0;
-  /* 初始状态：完全透明 */
   transform: translateX(-70%);
-  /* 初始状态：完全向左偏移 */
   transition: transform 3s ease, opacity 5s ease;
-  /* 缓动过渡效果 */
-
 }
 
 .standard {
@@ -444,10 +432,10 @@ body {
 
 .examine img {
   width: 70%;
-  height: auto%;
+  height: auto;
   padding-top: 220px;
-  padding-top: 180px;   
-  padding-bottom: 70px; 
+  padding-top: 180px;
+  padding-bottom: 70px;
   margin: auto;
   opacity: 0;
   transform: scale(0.5);
@@ -470,14 +458,14 @@ body {
 }
 
 .fontdesign {
-  transform: scale(1.5); /* 初始时放大 */
-  transition: transform 2s, opacity 1s; /* 平滑的动画 */
+  transform: scale(1.5);
+  transition: transform 2s, opacity 1s;
 }
 
 .background img {
   width: 650px;
   height: auto;
-  margin-top: 150px;  
+  margin-top: 150px;
 
 }
 
