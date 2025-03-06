@@ -130,3 +130,27 @@ window.addEventListener('scroll', function() {
     element.style.opacity = opacityValue;
   }
 });
+
+window.addEventListener('scroll', function() {
+  const div = document.querySelector('.gold');
+  const divPosition = div.getBoundingClientRect().top;  // 获取元素距离视口顶部的距离
+  const windowHeight = window.innerHeight;  // 获取视口的高度
+  
+  // 当元素滚动到视口范围内时，改变它的透明度和缩放比例
+  if (divPosition < windowHeight * 0.7) {  // 元素滚动到距离视口80%时触发
+    div.style.opacity = 1;
+    div.style.transform = 'scale(1)';  // 使元素放大至原始大小
+  }
+});
+
+window.addEventListener('scroll', function() {
+  const div = document.querySelector('.embroidery');
+  const divPosition = div.getBoundingClientRect().top;  // 获取元素距离视口顶部的距离
+  const windowHeight = window.innerHeight;  // 获取视口的高度
+  
+  // 当元素滚动到视口范围内时，改变它的透明度和缩放比例
+  if (divPosition < windowHeight * 0.5) {  // 元素滚动到距离视口80%时触发
+    div.style.opacity = 1;
+    div.style.transform = 'scale(1)';  // 使元素放大至原始大小
+  }
+});
