@@ -383,6 +383,48 @@ body {
   background-color: #e3e3e3;
 }
 
+.print {
+  width: 100%;
+  height: 650px;
+  background-image: url('../images/yinshua.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  place-items：center；
+}
+
+.material {
+  width: 100%;
+  height: auto;  
+  display: flex;
+}
+
+.gold {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  padding-top: 200px;    
+  padding-right: 100px;  
+  padding-bottom: 100px; 
+  padding-left: 200px;  
+  opacity: 0;  
+  transform: scale(0.1); 
+  transition: opacity 2s ease, transform 1s ease;  
+}
+
+.embroidery {
+  width: 12%;
+  height: 12%;
+  margin: auto;
+  padding-top: 200px;    
+  padding-right: 400px;  
+  padding-bottom: 100px; 
+  padding-left: 100px;    
+  opacity: 0;  
+  transform: scale(0.1);  
+  transition: opacity 2s ease, transform 1s ease;  
+}
+
 .building {
   width: 100%;
   height: 600px;
