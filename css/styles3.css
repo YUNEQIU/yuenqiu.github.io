@@ -168,23 +168,15 @@ body {
 
 #mascot {
   position: relative;
-  /* 为了后面定位其他元素 */
   width: 100%;
   height: 800px;
-  /* 设置高度 */
   background-image: url("../images2/jxw.avif");
-  /* 设置背景图片 */
   background-size: cover;
-  /* 背景图片覆盖整个区域 */
   background-position: center;
-  /* 背景图片居中 */
   background-attachment: fixed;
   display: flex;
-  /* 使用flex布局使内容垂直水平居中 */
   justify-content: center;
-  /* 水平居中 */
   align-items: center;
-  /* 垂直居中 */
 }
 
 #mascot img {
@@ -217,17 +209,12 @@ body {
 .vione {
   width: 100%;
   height: 600px;
-  /* 设置高度 */
   background-image: url("../images2/vibj.avif");
-  /* 设置背景图片 */
   background-size: cover;
   background-position: center;
-  /* 背景图片居中 */
   background-attachment: fixed;
   justify-content: center;
-  /* 水平居中 */
   align-items: center;
-  /* 垂直居中 */
 }
 
 .vione img {
@@ -239,17 +226,12 @@ body {
 .vitwo {
   width: 100%;
   height: 700px;
-  /* 设置高度 */
   background-image: url("../images2/vibj2.avif");
-  /* 设置背景图片 */
   background-size: cover;
   background-position: center;
-  /* 背景图片居中 */
   background-attachment: fixed;
   justify-content: center;
-  /* 水平居中 */
   align-items: center;
-  /* 垂直居中 */
 }
 
 .vitwo img {
@@ -261,17 +243,12 @@ body {
 .google {
   width: 100%;
   height: 600px;
-  /* 设置高度 */
   background-image: url("../images2/googlebj.avif");
-  /* 设置背景图片 */
   background-size: cover;
   background-position: center;
-  /* 背景图片居中 */
   background-attachment: fixed;
   justify-content: center;
-  /* 水平居中 */
   align-items: center;
-  /* 垂直居中 */
 }
 
 .google img {
