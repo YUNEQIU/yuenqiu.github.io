@@ -542,6 +542,26 @@ body {
   height: auto;
 }
 
+.app {
+  width: 100%;
+  height: 1200px;
+  background-image: url("../images/app_2.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.phoneapp {
+  width: 100%;
+  height: auto;
+}
+
+.phoneapp img {
+  width: 1200px;
+  height: auto;
+  padding-top: 200px;   
+}
+
 @keyframes floatUpDown {
   50% {
     transform: translateY(-40px);
