@@ -217,13 +217,14 @@ button:hover::before {
   color: #2E8B57;
   text-align: left;
   padding-top: 60px;
+  padding-bottom: 30px; 
 }
 
 .mascotword p {
   font-size: 1.2vw;
   color: #282828;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .container {
