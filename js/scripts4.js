@@ -1,5 +1,5 @@
 if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = "https://shedusw.com/edu.html";
+    window.location.href = "https://shedusw.com/mobile3.html";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
