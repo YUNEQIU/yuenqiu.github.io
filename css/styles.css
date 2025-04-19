@@ -456,6 +456,54 @@ body {
   background-attachment: fixed;
 }
 
+.favicon {
+  width: 100%;
+  height: auto;
+  background: url(../images/icon.avif) no-repeat top/cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.favicon h1 {
+  font-size: 30px;
+  color: #002FA7;
+  padding-top: 50px;
+}
+
+.favicon p {
+  font-size: 16px;
+  color: #282828;
+}
+
+.iconbox {
+  width: 100px;
+  height: 300px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  margin-left: 35%;
+}
+
+.icon1 img {
+  width: 10px;
+  height: 10px;
+  padding-top: 50px;
+}
+
+.icon2 img {
+  width: 16px;
+  height: 16px;
+  padding-top: 30px;
+}
+
+.icon3 img {
+  width: 32px;
+  height: 32px;
+  padding-top: 30px;
+}
+
 .passion {
   width: 600px;
   height: 650px;
