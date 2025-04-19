@@ -35,7 +35,7 @@ body {
   display: flex;
   place-items: center;
   justify-content: center;
-  margin-left: 200px;   
+  margin-left: 200px;
 }
 
 button {
@@ -51,7 +51,7 @@ button {
   overflow: hidden;
   z-index: 1;
   background-color: #ffffff;
-  margin-left: 15px;   
+  margin-left: 15px;
 }
 
 button::before {
@@ -93,16 +93,16 @@ button:hover::before {
 .title {
   width: 100%;
   height: auto;
-  padding-top: 276px;
+  padding-top: 5px;
 }
 
 .title h1 {
-  font-size: 42px;
+  font-size: 35px;
   color: #2E8B57;
 }
 
 .title p {
-  font-size: 22px;
+  font-size: 18px;
   color: #282828;
 }
 
@@ -147,7 +147,7 @@ button:hover::before {
   width: 100%;
   height: auto;
   background: url(../images3/fontbanner.avif) no-repeat top/cover;
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -226,7 +226,6 @@ button:hover::before {
   padding-top: 10px;
 }
 
-
 .container {
   margin-top: 800px;
   display: flex;
@@ -244,8 +243,6 @@ button:hover::before {
   transform: scale(1);
   opacity: 1;
 }
-
-
 
 .vibox {
   width: 100%;
@@ -299,7 +296,7 @@ button:hover::before {
   width: 100%;
   height: auto;
   background: url(../images3/favicon.avif) no-repeat top/cover;
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -308,7 +305,7 @@ button:hover::before {
 .favicon h1 {
   font-size: 30px;
   color: #2E8B57;
-  padding-top: 50px;    
+  padding-top: 50px;
 }
 
 .favicon p {
@@ -322,25 +319,25 @@ button:hover::before {
   display: flex;
   place-items: center;
   flex-direction: column;
-  margin-left: 35%;    
+  margin-left: 35%;
 }
 
 .icon1 img {
   width: 8px;
   height: 8px;
-  padding-top: 50px;    
+  padding-top: 50px;
 }
 
 .icon2 img {
   width: 16px;
   height: 16px;
-  padding-top: 30px;   
+  padding-top: 30px;
 }
 
 .icon3 img {
   width: 32px;
   height: 32px;
-  padding-top: 30px;   
+  padding-top: 30px;
 }
 
 .app {
