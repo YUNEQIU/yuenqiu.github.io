@@ -223,7 +223,7 @@ button:hover::before {
   font-size: 1.2vw;
   color: #282828;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .container {
