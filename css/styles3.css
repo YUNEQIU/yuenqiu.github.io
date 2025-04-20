@@ -208,19 +208,13 @@ body {
 
 .app {
   width: 100%;
-  height: auto;
+  height: 1000px;
   background-image: url("../images2/starapp_1.avif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
-}
-
-.app img {
-  width: 80%;
-  height: auto;
-  padding-top: 100px;
 }
 
 .vione {
