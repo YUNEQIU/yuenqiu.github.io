@@ -592,7 +592,7 @@ body {
 
 .app {
   width: 100%;
-  height: 1200px;
+  height: auto;
   background-image: url("../images/app_2.avif");
   background-size: cover;
   background-position: center;
@@ -601,13 +601,7 @@ body {
 
 .phoneapp {
   width: 100%;
-  height: auto;
-}
-
-.phoneapp img {
-  width: 1200px;
-  height: auto;
-  padding-top: 200px;   
+  height: 1200px;
 }
 
 @keyframes floatUpDown {
