@@ -52,6 +52,7 @@ button {
   z-index: 1;
   background-color: #ffffff;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 button::before {
