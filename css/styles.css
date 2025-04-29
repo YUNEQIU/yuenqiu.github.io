@@ -157,61 +157,28 @@ body {
 }
 
 /* 域名 */
-.domain .bg {
-  height: 400px;
-  background-color: #ffffff;
-}
-
-.bg .domainfont {
+.domainbox {
   width: 100%;
   height: auto;
-}
-
-.bg .domainfont img {
-  width: 800px;
   height: auto;
-  padding-top: 100px;
-  opacity: 0;
-  transform: translateY(-150px);
-  transition: transform 8s ease, opacity 5s ease;
+  background: url(../images/domain.avif) no-repeat top/cover;
+  background-size: 600px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: left;
 }
 
-.domain .content {
-  height: 1100px;
+.domain {
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  background: url(../images/shedusw.avif) no-repeat center/cover;
+  height: 1200px;
+  display: flex;
+  align-items: flex-end;
 }
 
-.xinkaishi {
+.domain img {
   width: 100%;
   height: auto;
-  opacity: 0;
-  transform: translateY(200px);
-  transition: opacity 2s, transform 3s;
-}
-
-.xinkaishi img {
-  width: 40%;
-  height: auto;
-  padding-top: 800px;
-}
-
-.domain .content h2 {
-  font-size: 40px;
-  float: right;
-  padding-top: 100px;
-  width: 500px;
-  text-align: right;
-}
-
-.domain .content p {
-  margin-top: 50px;
-  float: right;
-  width: 500px;
-  text-align: right;
-  font-size: 18px;
 }
 
 .content .bg,
