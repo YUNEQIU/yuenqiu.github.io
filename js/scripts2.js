@@ -64,17 +64,6 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-  const div = document.querySelector('.xinkaishi');
-  const divPosition = div.getBoundingClientRect().top; 
-  const windowHeight = window.innerHeight; 
-  
-  if (divPosition < windowHeight) {
-    div.style.opacity = 1;
-    div.style.transform = 'translateY(0)';
-  }
-});
-
-window.addEventListener('scroll', function() {
   const div = document.querySelector('.building img');
   const divPosition = div.getBoundingClientRect().top;  
   const windowHeight = window.innerHeight;  
