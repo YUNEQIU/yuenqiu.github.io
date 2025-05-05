@@ -97,18 +97,9 @@ button:hover::before {
   padding-top: 5px;
 }
 
-.title h1 {
-  font-size: 35px;
-  color: #2E8B57;
-  -webkit-text-stroke: 5px white;
-  paint-order: stroke;
-}
-
-.title p {
-  font-size: 18px;
-  color: #282828;
-  -webkit-text-stroke: 3px white;
-  paint-order: stroke;
+.title img {
+  width: 400px;
+  height: auto;
 }
 
 .analysisbox {
@@ -222,7 +213,7 @@ button:hover::before {
   color: #2E8B57;
   text-align: left;
   padding-top: 60px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .mascotword p {
@@ -237,7 +228,7 @@ button:hover::before {
   height: auto;
   height: auto;
   background: url(../images3/domain.avif) no-repeat top/cover;
-  background-size: 600px auto; 
+  background-size: 600px auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
