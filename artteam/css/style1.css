@@ -2380,7 +2380,7 @@ body {
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
 }
 
