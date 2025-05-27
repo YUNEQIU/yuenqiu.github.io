@@ -2521,7 +2521,7 @@ body {
 .teambox {
   width: 100%;
   height: 800px;
-  margin-top: 50px;
+  margin-top: -60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2535,6 +2535,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-top: 50px;    
 }
 
 .teamcard {
