@@ -421,7 +421,7 @@ body {
   color: white;
   cursor: pointer;
   transition: 400ms;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 
 .images .card p.tip {
@@ -443,7 +443,7 @@ body {
 .images:hover>.card:not(:hover) {
   filter: blur(2px);
   transform: scale(0.7, 0.7);
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 
 .content {
