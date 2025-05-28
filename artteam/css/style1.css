@@ -2535,7 +2535,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-top: 50px;    
+  margin-top: 50px;
 }
 
 .teamcard {
@@ -2553,10 +2553,11 @@ body {
 }
 
 .teamcard:hover {
-  transform: translateY(-20px);
+  transform: scale(1.15);
   /* 向上浮起 10px */
   box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2);
   /* 加深阴影 */
+  z-index: 1;
 }
 
 .teamcard img {
@@ -2564,6 +2565,12 @@ body {
   height: 380px;
   position: absolute;
   top: -200px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.teamcard img:hover {
+  transform: scale(1.1);
+  /* 向上浮起 10px */
 }
 
 .teamcopy {
@@ -2594,8 +2601,8 @@ body {
 
 .gradient-button {
   display: inline-flex;
-  align-items: center; 
-  justify-content: center;  
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to right, #a78bfa, #3b82f6);
   color: white;
   font-size: 18px;
@@ -2608,7 +2615,7 @@ body {
   cursor: pointer;
   height: 50px;
   text-decoration: none;
-  line-height: 1;  
+  line-height: 1;
   margin-top: 20px;
 }
 
