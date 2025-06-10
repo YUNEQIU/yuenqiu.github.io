@@ -2681,11 +2681,10 @@ body {
 }
 
 .row {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-  width: 100%;
 }
 
 .image-wrapper {
