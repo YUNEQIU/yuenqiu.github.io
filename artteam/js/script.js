@@ -1,10 +1,10 @@
 const softwareData = [
   {
-    name: "素材1",
+    name: "上海开放大学LOGO",
     file: "test1.psd",
-    description: "素材1描述",
-    page: "resource/test1.html",
-    thumbnail: "images/software1.jpg",
+    description: "上海开放大学LOGO",
+    page: "resource/logo1.html",
+    thumbnail: "images/logo/logo1/logo1_2.png",
   },
   {
     name: "素材2",
@@ -26,7 +26,6 @@ const softwareData = [
 function searchSoftware() {
   const query = document.getElementById("searchInput").value.trim();
   if (query) {
-    // 跳转到结果页面，传递查询参数
     window.location.href = `results.html?query=${encodeURIComponent(query)}`;
   }
 }
