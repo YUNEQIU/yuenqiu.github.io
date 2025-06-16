@@ -2803,7 +2803,7 @@ body {
   height: 300px;
   text-align: center;
   transition: transform 0.3s ease;
-    margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .downloadimage a {
@@ -2817,7 +2817,7 @@ body {
 .downloadimage img {
   width: 250px;
   height: 250px;
-  background-color: #ffffff;
+  background: #f7f7f7;
   border-radius: 15px;
   border: 1px solid #e7e7e7;
 }
@@ -2866,7 +2866,7 @@ body {
 }
 
 .resourcecard .front {
-  background: #fff;
+  background: #ffffff;
 }
 
 .resourcecard .front img {
@@ -2876,7 +2876,7 @@ body {
 }
 
 .resourcecard .back {
-  background: #e6e6e6;
+  background: #f0f0f0;
   color: #585858;
   transform: rotateY(180deg);
   padding: 20px;
