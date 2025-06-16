@@ -2817,12 +2817,41 @@ body {
 .downloadimage img {
   width: 250px;
   height: 250px;
-  background: #f7f7f7;
+  background: #ffffff;
   border-radius: 15px;
   border: 1px solid #e7e7e7;
 }
 
 .downloadimage p {
+  font-size: 16px;
+  color: #585858;
+}
+
+.downloadimage2 {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.downloadimage2 a {
+  text-decoration: none;
+}
+
+.downloadimage2:hover {
+  transform: scale(1.2);
+}
+
+.downloadimage2 img {
+  width: 250px;
+  height: 250px;
+  background: #ececec;
+  border-radius: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+.downloadimage2 p {
   font-size: 16px;
   color: #585858;
 }
@@ -2848,7 +2877,8 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.1s linear;
   border-radius: 20px;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
   cursor: grab;
 }
 
