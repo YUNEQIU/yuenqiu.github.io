@@ -7,11 +7,11 @@ const softwareData = [
     thumbnail: "images/logo/logo1/logo1_2.png",
   },
   {
-    name: "素材2",
-    file: "test2.psd",
-    description: "素材2描述",
-    page: "resource/test2.html",
-    thumbnail: "images/software2.jpg",
+    name: "上海学习网LOGO",
+    file: "test1.psd",
+    description: "上海学习网LOGO",
+    page: "resource/logo2.html",
+    thumbnail: "images/logo/logo2/logo_1.png",
   },
   {
     name: "素材3",
