@@ -2764,7 +2764,7 @@ body {
 .downloadbox {
   width: 100%;
   height: auto;
-  background: url(../images/room.jpg) no-repeat top/cover;
+  background: url(../images/room.avif) no-repeat top/cover;
   background-attachment: fixed;
 }
 
