@@ -202,7 +202,7 @@ const softwareData = [
 
   {
     name: "巾帼大学堂LOGO",
-    file: "logo_1.png",
+    file: "巾帼大学堂logo.ai",
     description: "巾帼大学堂LOGO",
     page: "logo26.html",
     thumbnail: "images/logo/logo26/logo_1.png",
