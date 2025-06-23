@@ -87,11 +87,17 @@ body {
   border-radius: 20px;
   /* 设置圆角边框 */
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.search :hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 搜索框输入框 */
 .search-bar {
-  width: 80%;
+  width: 100%;
   /* 设置输入框占容器的80%宽度 */
   height: 20px;
   padding: 10px;
@@ -100,10 +106,13 @@ body {
   /* 设置字体大小 */
   border: none;
   /* 移除边框 */
-  border-radius: 20px 0 0 20px;
-  /* 左侧圆角，右侧不设置圆角 */
+  border-radius: 20px;
+  /* 圆角 */
   outline: none;
   /* 移除聚焦时的轮廓线 */
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 /* 按钮的样式 */
@@ -113,24 +122,26 @@ body {
   height: 40px;
   font-size: 16px;
   /* 设置字体大小 */
-  background-color: #ff0051;
+  background-color: #7700ff;
   /* 设置按钮背景颜色 */
   color: white;
   /* 设置按钮文字颜色 */
   border: none;
   /* 移除按钮的边框 */
-  border-radius: 0 20px 20px 0;
-  /* 右侧圆角，左侧不设置圆角 */
+  border-radius: 20px;
+  /* 圆角 */
   cursor: pointer;
   /* 鼠标悬停时变成可点击 */
   transition: background-color 0.3s;
   /* 添加过渡效果 */
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 /* 鼠标悬停时按钮的背景色 */
 .search button:hover {
-  background-color: #45a049;
+  background-color: #ff006a;
+  transform: scale(1.2);
 }
 
 /* menu */
@@ -2984,4 +2995,14 @@ body {
   .downloadimage {
     flex: 1 1 100%;
   }
+}
+
+.test {
+  width: 50%;
+  height: auto;
+}
+
+.test img {
+  width: 100%;
+  height: auto;
 }
