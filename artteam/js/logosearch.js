@@ -306,7 +306,7 @@ function displaySoftwareList(softwareList) {
   listElement.innerHTML = ""; // 清空当前列表
 
   if (softwareList.length === 0) {
-    listElement.innerHTML = "<li>没有找到匹配的软件。</li>";
+    listElement.innerHTML = "<li>很遗憾，没有检索到相应关键字的资源，请用其它关键字再次尝试。</li>";
   } else {
     softwareList.forEach((software) => {
       const listItem = document.createElement("li");
