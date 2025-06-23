@@ -1105,6 +1105,7 @@ body {
     height: 460px;
     object-fit: cover;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .video2 {
@@ -1112,6 +1113,7 @@ body {
     height: 220px;
     object-fit: cover;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .video3 {
@@ -1119,6 +1121,7 @@ body {
     height: 220px;
     object-fit: cover;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* 响应式 */
