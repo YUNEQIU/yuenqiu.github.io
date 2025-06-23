@@ -1056,7 +1056,7 @@ body {
 .right2 .top2,
 .right2 .bottom2 {
     height: 220px;
-    background-color: #9c9;
+    background-color: rgb(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
