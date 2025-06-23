@@ -54,3 +54,15 @@ items.forEach(item => {
 document.querySelector(".album-container").addEventListener("mouseleave", () => {
   items.forEach(i => i.classList.remove("expanded-item"));
 });
+
+// 视频
+document.querySelectorAll('.video3').forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
