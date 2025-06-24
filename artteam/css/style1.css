@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   width: 100%;
   height: auto;
@@ -516,7 +521,7 @@ body {
 .color6 {
   width: 100%;
   height: 100px;
-  background: linear-gradient(to bottom, #ffffff, #e1ddff);
+  background: linear-gradient(to bottom, #d9d8d9, #e1ddff);
 }
 
 .color7 {
@@ -1369,6 +1374,172 @@ body {
   justify-content: center;
 }
 
+/* 海报 */
+
+.resource13 {
+  width: 100%;
+  height: 1200px;
+  margin-top: 0px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.resourctitle13 {
+  width: 100%;
+  height: 80px;
+  margin-top: 30px;
+  z-index: 0;
+}
+
+.resourctitle13 h2 {
+  font-size: 32px;
+  background: linear-gradient(to right, rgb(89, 0, 255), rgb(255, 0, 106));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+.resourctitle13 h4 {
+  font-size: 18px;
+  color: #ffffff;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.resourctitle13 p {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.resourcetitle13 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.resourcetitle13 h1 {
+  font-size: 26px;
+  color: #585858;
+}
+
+.resourcetitle13 p {
+  font-size: 14px;
+  color: #252525;
+}
+
+.mobileposter3d {
+  width: 100%;
+  height: 1200px;
+  position: absolute;
+}
+
+.imagesbox13 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 整个图片容器 */
+.images13 {
+  width: 100%;
+  /* 设置容器宽度 */
+  height: 300px;
+  /* 设置容器高度 */
+  display: flex;
+  /* 使用 flexbox 布局 */
+  justify-content: center;
+  /* 水平居中对齐内容 */
+  flex-direction: row;
+  /* 让子元素排列在一行 */
+  gap: 20px;
+  /* 子元素之间的间隔 */
+  place-items: center;
+  /* 在容器内垂直和水平居中对齐 */
+  margin-top: 200px;
+}
+
+/* 图片样式 */
+.card13 img {
+  width: 200px;
+  /* 设置图片宽度 */
+  height: 300px;
+  /* 设置图片高度 */
+  filter: drop-shadow(6px 15px 2px rgba(152, 152, 152, 0.2));
+}
+
+/* 卡片样式 */
+.images13 .card13 {
+  display: flex;
+  /* 使用 flexbox 布局 */
+  align-items: center;
+  /* 垂直居中对齐内容 */
+  justify-content: center;
+  /* 水平居中对齐内容 */
+  flex-direction: column;
+  /* 子元素按列排列 */
+  text-align: center;
+  /* 文字居中 */
+  height: 200px;
+  /* 设置卡片高度 */
+  width: 200px;
+  /* 设置卡片宽度 */
+  border-radius: 10px;
+  /* 设置圆角 */
+  color: white;
+  /* 设置文本颜色为白色 */
+  cursor: pointer;
+  /* 鼠标悬停时显示点击手指效果 */
+  transition: transform 400ms, filter 400ms;
+  /* 设置过渡效果，包括变换和滤镜 */
+  filter: grayscale(0%);
+  /* 默认显示彩色 */
+}
+
+/* 卡片上的标题样式 */
+.images13 .card13 p.tip {
+  font-size: 14px;
+  /* 设置字体大小 */
+  font-weight: bold;
+  /* 设置加粗 */
+  padding-top: 5px;
+  /* 设置顶部内边距 */
+}
+
+/* 卡片悬停效果 */
+.images13 .card13:hover {
+  transform: scale(2);
+  /* 放大效果，调整为适当的比例 */
+  filter: grayscale(0%);
+  /* 悬停时保持彩色 */
+  transition: transform 0.4s ease, filter 0.4s ease;
+  /* 平滑过渡效果 */
+  z-index: 1;
+  /* 设置更高的层级，确保卡片在最上层 */
+}
+
+/* 容器悬停时非悬停卡片的效果 */
+.images13:hover>.card13:not(:hover) {
+  filter: grayscale(100%);
+  /* 将未悬停的卡片显示为灰度 */
+  transform: scale(0.8, 0.8);
+  /* 重置缩放 */
+  filter: blur(3px);
+}
+
+.more13 {
+  width: 100%;
+  height: 40px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+}
 
 /* 数据可视化仪表盘 */
 
