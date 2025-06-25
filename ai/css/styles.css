@@ -9,131 +9,190 @@ body {
     background-color: #f9fafb;
 }
 
+/* 顶部导航栏容器 */
 .navbar {
+    font-size: 18px;
+    height: 100px;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     position: fixed;
+    /* 固定在页面顶部 */
     width: 100%;
     z-index: 999;
+    /* 确保覆盖其他内容 */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
+/* 导航栏内部容器，居中限制最大宽度 */
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    width: 70%;
     height: 64px;
     margin: 0 auto;
     padding: 0 16px;
+    margin-top: 18px;
 }
 
+/* LOGO图片大小 */
 .logo img {
-    height: 40px;
+    width: 250px;
+    height: auto;
 }
 
+/* 主菜单容器，水平排列，间距24px */
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 24px;
+    position: relative;
+    /* 方便紫色背景绝对定位 */
 }
 
+/* 紫色滑动背景层，默认隐藏，使用整体缩放动画 */
+.nav-hover-bg {
+    position: absolute;
+    background-color: #A811C5;
+    border-radius: 12px;
+    z-index: -1;
+    /* 背景层，低于菜单文字 */
+    transition: all 0.3s ease;
+    /* 平滑动画 */
+    transform: scale(0);
+    /* 初始状态缩小为0 */
+    transform-origin: center center;
+    /* 缩放以中心为原点 */
+    opacity: 0;
+    /* 初始透明 */
+    height: 36px;
+    /* 高度固定，和菜单项一致 */
+    pointer-events: none;
+    /* 不阻止鼠标事件 */
+}
+
+/* 菜单链接和按钮公共样式 */
 .nav-menu a,
 .dropbtn {
-    color: #333;
+    position: relative;
+    z-index: 1;
+    color: #383838;
     text-decoration: none;
-    padding: 8px;
-    transition: color 0.3s ease;
+    padding: 8px 16px;
     background: none;
     border: none;
     font: inherit;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
+/* 鼠标悬停时文字变白 */
 .nav-menu a:hover,
 .dropbtn:hover {
     color: #ffffff;
-    background-color: #007BFF;
-    border-radius: 10px;
 }
 
+/* “工具”菜单的下拉容器，定位父元素 */
 .dropdown {
     position: relative;
 }
 
+/* 下拉菜单内容样式，初始隐藏并偏移，带圆角和阴影 */
 .dropdown-content {
     position: absolute;
     top: 42px;
+    /* 距离父元素底部 */
     left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    background-color: #007BFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 水平居中 */
+    transform: translateX(-50%) translateY(-10px);
+    /* 向上偏移隐藏 */
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* 半透明白背景 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* 阴影 */
     width: 200px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     padding: 4px 0;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+    /* 背景模糊 */
+    transition: all 0.3s ease;
 }
 
+/* 鼠标悬停父元素时，下拉菜单淡入且位移回原位 */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+    /* 允许点击 */
+}
+
+/* 下拉菜单项 */
 .dropdown-content a {
     display: block;
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
+/* 鼠标悬停下拉菜单项，背景变紫文字变白，圆角 */
 .dropdown-content a:hover {
-    background-color: #007BFF;
-    color: #e5ff00;
+    width: 100%;
+    color: #A811C5;
 }
 
-.dropdown:hover .dropdown-content {
-    width: 100px;
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-}
-
+/* 认证按钮容器，水平排列且间距 */
 .auth-buttons {
     display: flex;
     gap: 12px;
 }
 
+/* 注册和登录按钮共有样式 */
 .register-btn,
 .login-btn {
     padding: 6px 14px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-    border: 1px solid #007BFF;
+    border: 1px solid #A811C5;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* 注册按钮默认样式 */
 .register-btn {
-    color: #007BFF;
+    color: #A811C5;
     background-color: white;
 }
 
+/* 注册按钮悬停变紫底白字 */
 .register-btn:hover {
-    background-color: #007BFF;
+    background-color: #A811C5;
     color: white;
 }
 
+/* 登录按钮默认紫底白字 */
 .login-btn {
-    background-color: #007BFF;
+    background-color: #A811C5;
     color: white;
 }
 
+/* 登录按钮悬停效果保持不变 */
 .login-btn:hover {
-    background-color: #0056b3;
+    background-color: #A811C5;
 }
 
+/* 移动端菜单切换按钮，默认隐藏 */
 .menu-toggle {
     display: none;
     font-size: 24px;
@@ -142,6 +201,7 @@ body {
     cursor: pointer;
 }
 
+/* 移动端菜单容器，竖直排列 */
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -151,6 +211,7 @@ body {
     text-align: center;
 }
 
+/* 移动端菜单链接 */
 .mobile-menu a {
     padding: 8px 0;
     color: #333;
@@ -158,10 +219,12 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+/* 移动端子菜单标题 */
 .mobile-submenu {
     margin-top: 8px;
 }
 
+/* 子菜单标题文本 */
 .mobile-submenu span {
     font-weight: bold;
     margin-bottom: 4px;
@@ -169,12 +232,14 @@ body {
     text-align: center;
 }
 
+/* 移动端子菜单链接容器，水平排列 */
 .mobile-submenu-links {
     display: flex;
     justify-content: center;
     gap: 12px;
 }
 
+/* 移动端子菜单具体链接 */
 .mobile-submenu-links a {
     padding: 6px 10px;
     border: 1px solid #ccc;
@@ -186,10 +251,12 @@ body {
     transition: background-color 0.3s;
 }
 
+/* 子菜单链接悬停变浅蓝 */
 .mobile-submenu-links a:hover {
     background-color: #e0f0ff;
 }
 
+/* 移动端认证按钮容器 */
 .mobile-auth {
     display: flex;
     gap: 12px;
@@ -197,10 +264,12 @@ body {
     justify-content: center;
 }
 
+/* 移动端菜单激活时显示 */
 .mobile-menu.active {
     display: flex;
 }
 
+/* 响应式设计：屏幕小于768px时，隐藏主菜单和认证按钮，显示菜单切换按钮 */
 @media (max-width: 768px) {
 
     .nav-menu,
@@ -225,8 +294,8 @@ body {
 .banner3dbox {
     width: 100%;
     height: auto;
-    top: 443px;
-    z-index: 2;
+    top: 500px;
+    z-index: 1;
     position: absolute;
 }
 
@@ -238,15 +307,15 @@ body {
 .banner3d h1 {
     font-size: 40px;
     color: #ffffff;
-    padding-top: 100px;
-    z-index: 1;
+    padding-top: 150px;
+    z-index: 3;
     text-align: center;
 }
 
 .banner3d p {
     font-size: 24px;
     color: #ffffff;
-    z-index: 1;
+    z-index: 3;
     text-align: center;
 }
 
@@ -442,7 +511,7 @@ body {
 
 .child1 {
     width: 380px;
-    background: rgb(255, 179, 0);
+    background: #FF662A;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -458,7 +527,7 @@ body {
 
 .child2 {
     width: 380px;
-    background: rgb(0, 201, 247);
+    background: #FFA22A;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -474,7 +543,7 @@ body {
 
 .child3 {
     width: 380px;
-    background: rgb(189, 113, 255);
+    background: #82AC26;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -485,6 +554,23 @@ body {
 }
 
 .child3:hover {
+    transform: scale(1.1);
+
+}
+
+.child4 {
+    width: 380px;
+    background: #4F3F84;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.child4:hover {
     transform: scale(1.1);
 
 }
@@ -550,7 +636,7 @@ body {
     background: url(../images/kechengbeijing.avif) no-repeat top/cover;
     background-size: cover;
     background-position: center;
-    margin-top: 160px;
+    margin-top: 220px;
 }
 
 .album-containerbox2 {
