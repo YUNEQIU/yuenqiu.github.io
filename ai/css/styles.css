@@ -17,7 +17,7 @@ body {
     box-shadow: 0 0px 40px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.8);
     border-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
     position: fixed;
     /* 固定在页面顶部 */
     width: 100%;
@@ -117,7 +117,7 @@ body {
     /* 半透明白背景 */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     /* 阴影 */
-    width: 200px;
+    width: 150px;
     border-radius: 12px;
     text-align: center;
     padding: 4px 0;
@@ -125,6 +125,10 @@ body {
     backdrop-filter: blur(6px);
     /* 背景模糊 */
     transition: all 0.3s ease;
+}
+
+.dropdown-content p {
+    color: #d4d4d4;
 }
 
 /* 鼠标悬停父元素时，下拉菜单淡入且位移回原位 */
@@ -173,23 +177,27 @@ body {
 .register-btn {
     color: #A811C5;
     background-color: white;
+    transition: transform 0.3s ease;
 }
 
 /* 注册按钮悬停变紫底白字 */
 .register-btn:hover {
-    background-color: #A811C5;
-    color: white;
+    background-color: #ffffff;
+    color: #A811C5;
+    transform: scale(1.3); 
 }
 
 /* 登录按钮默认紫底白字 */
 .login-btn {
     background-color: #A811C5;
     color: white;
+    transition: transform 0.3s ease;
 }
 
 /* 登录按钮悬停效果保持不变 */
 .login-btn:hover {
     background-color: #A811C5;
+    transform: scale(1.3); 
 }
 
 /* 移动端菜单切换按钮，默认隐藏 */
@@ -1232,8 +1240,15 @@ body {
     align-items: center;
     height: 150px;
     padding: 0 40px;
-    background-color: #3e3e3e;
+    background-color: #5A048A;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footrelogo {
+    flex: 1;
+    margin-left: 8%;
 }
 
 .footer-left {
@@ -1241,7 +1256,7 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -1249,9 +1264,8 @@ body {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    /* 整体靠右 */
     align-items: center;
-    /* 垂直居中 */
+    margin-right: 10%;
 }
 
 .footer-right-content {
@@ -1259,6 +1273,6 @@ body {
     flex-direction: column;
     text-align: left;
     /* 内部文字靠左 */
-    font-size: 14px;
+    font-size: 18px;
     color: #ffffff;
 }
