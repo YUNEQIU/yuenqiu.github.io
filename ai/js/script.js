@@ -11,6 +11,54 @@ window.addEventListener('resize', () => {
   }
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navMenu = document.querySelector('.nav-menu');
+  const hoverBg = document.querySelector('.nav-hover-bg');
+  const menuItems = Array.from(navMenu.querySelectorAll('a, .dropbtn'));
+
+  // ✅ 包括“工具”
+  const animatedItems = ["首页", "课程", "项目", "数据", "体验", "读本", "活动", "工具"];
+
+  menuItems.forEach(item => {
+    const text = item.textContent.trim();
+
+    if (animatedItems.includes(text)) {
+      item.addEventListener('mouseenter', () => {
+        const rect = item.getBoundingClientRect();
+        const containerRect = navMenu.getBoundingClientRect();
+        const offsetLeft = rect.left - containerRect.left;
+        const offsetTop = rect.top - containerRect.top;
+
+        hoverBg.style.width = `${rect.width}px`;
+        hoverBg.style.height = `${rect.height}px`;
+        hoverBg.style.left = `${offsetLeft}px`;
+        hoverBg.style.top = `${offsetTop}px`;
+
+        // ✅ 始终使用 scale() 动画
+        hoverBg.style.opacity = 1;
+        hoverBg.style.transform = 'scale(1)';
+      });
+
+      item.addEventListener('mouseleave', (e) => {
+        const related = e.relatedTarget;
+        if (!navMenu.contains(related)) {
+          hoverBg.style.opacity = 0;
+          hoverBg.style.transform = 'scale(0)';
+        }
+      });
+    }
+  });
+
+  navMenu.addEventListener('mouseleave', () => {
+    hoverBg.style.opacity = 0;
+    hoverBg.style.transform = 'scale(0)';
+  });
+});
+
+
+
+
 // 滚动图
 const strip = document.querySelector(".image-strip");
 const images = strip.querySelectorAll("img");
