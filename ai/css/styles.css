@@ -184,7 +184,7 @@ body {
 .register-btn:hover {
     background-color: #ffffff;
     color: #A811C5;
-    transform: scale(1.3); 
+    transform: scale(1.3);
 }
 
 /* 登录按钮默认紫底白字 */
@@ -197,7 +197,7 @@ body {
 /* 登录按钮悬停效果保持不变 */
 .login-btn:hover {
     background-color: #A811C5;
-    transform: scale(1.3); 
+    transform: scale(1.3);
 }
 
 /* 移动端菜单切换按钮，默认隐藏 */
@@ -931,6 +931,7 @@ body {
     gap: 30px;
     padding: 50px;
     max-width: 600px;
+    flex: 0 0 32%;
 }
 
 .left {
@@ -971,9 +972,18 @@ body {
 }
 
 /* 响应式处理：小屏幕时每行1个 */
-@media (max-width: 768px) {
+@media (max-width: 2559px) {
+    .aitoolbox2 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+/* 每行 1 个（适用于宽度小于 1024px） */
+@media (max-width: 1023px) {
     .aitoolbox2 {
         flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -1004,6 +1014,18 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     padding-bottom: 60px;
+}
+
+.eventstitle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.eventstitle img {
+    width: 400px;
+    height: auto;
 }
 
 .ai-header3 {
@@ -1083,7 +1105,7 @@ body {
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-    padding-top: 230px;
+    padding-top: 100px;
 }
 
 /* 三个主区块 */
