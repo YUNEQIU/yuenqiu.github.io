@@ -19,10 +19,8 @@ body {
     border-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.9);
     position: fixed;
-    /* 固定在页面顶部 */
     width: 100%;
     z-index: 999;
-    /* 确保覆盖其他内容 */
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -60,8 +58,7 @@ body {
     background-color: #A811C5;
     border-radius: 12px;
     z-index: -1;
-    /* 背景层，低于菜单文字 */
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     /* 平滑动画 */
     transform: scale(0);
     /* 初始状态缩小为0 */
@@ -73,6 +70,7 @@ body {
     /* 高度固定，和菜单项一致 */
     pointer-events: none;
     /* 不阻止鼠标事件 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* 菜单链接和按钮公共样式 */
@@ -93,6 +91,7 @@ body {
 /* 鼠标悬停时文字变白 */
 .nav-menu a:hover,
 .dropbtn:hover {
+    font-weight: bold;
     color: #ffffff;
 }
 
