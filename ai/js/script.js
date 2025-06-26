@@ -114,3 +114,13 @@ document.querySelectorAll('.video3').forEach(video => {
     video.currentTime = 0;
   });
 });
+
+//课程列表
+
+function toggleSubMenu(header) {
+  const arrow = header.querySelector(".arrow");
+  const submenu = header.nextElementSibling;
+
+  submenu.classList.toggle("show");
+  arrow.classList.toggle("rotate");
+}
