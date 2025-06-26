@@ -165,8 +165,8 @@ body {
 .register-btn,
 .login-btn {
     padding: 6px 14px;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 18px;
     cursor: pointer;
     border: 1px solid #A811C5;
     transition: background-color 0.3s, color 0.3s;
@@ -176,7 +176,7 @@ body {
 .register-btn {
     color: #A811C5;
     background-color: white;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 /* 注册按钮悬停变紫底白字 */
@@ -184,17 +184,19 @@ body {
     background-color: #ffffff;
     color: #A811C5;
     transform: scale(1.3);
+    font-weight: bold;
 }
 
 /* 登录按钮默认紫底白字 */
 .login-btn {
     background-color: #A811C5;
     color: white;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 /* 登录按钮悬停效果保持不变 */
 .login-btn:hover {
+    font-weight: bold;
     background-color: #A811C5;
     transform: scale(1.3);
 }
@@ -614,7 +616,7 @@ body {
 .top-img:hover {
     transform: scale(1.3) rotate(0deg);
     z-index: 999;
-    filter: drop-shadow(0px 0px 8px rgb(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 10px 8px rgb(0, 0, 0, 0.5));
 }
 
 .title {
