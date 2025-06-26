@@ -329,7 +329,7 @@ body {
 /* 滚动图 */
 .album-container {
     width: 100%;
-    height: 500px;
+    height: 550px;
     margin: auto;
     overflow: hidden;
     background: white;
@@ -389,11 +389,9 @@ body {
 .middle-bar {
     position: relative;
     overflow: hidden;
-    height: 220px;
+    height: 280px;
     display: flex;
     align-items: center;
-
-
 
     -webkit-mask-image: linear-gradient(to right,
             transparent 0%,
@@ -413,7 +411,6 @@ body {
     animation: scroll 30s linear infinite;
 }
 
-
 .image-strip img {
     height: 100px;
     width: auto;
@@ -429,25 +426,49 @@ body {
     border: 1px solid #ffffff;
 }
 
-
 .image-strip img.blurred {
     filter: blur(5px);
     transition: filter 0.3s;
 }
 
-
 .image-strip img.flipping {
     filter: none;
-    transform: perspective(800px) rotateY(360deg) scale(2);
+    transform: perspective(800px) rotateY(360deg) scale(2.5);
     z-index: 10;
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
 }
 
-
 .flipping {
-    transform: perspective(800px) rotateY(360deg) scale(1.2);
+    transform: perspective(800px) rotateY(360deg) scale(1.5);
 }
 
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    gap: 6px;
+}
+
+.image-item img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #eee;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    will-change: transform;
+    border: 1px solid #ffffff;
+}
+
+.caption {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+}
 
 @keyframes flip3D {
     0% {
@@ -463,7 +484,6 @@ body {
     }
 }
 
-
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -473,7 +493,6 @@ body {
         transform: translateX(-50%);
     }
 }
-
 
 .bottom-bar {
     display: flex;
