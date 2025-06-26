@@ -981,6 +981,18 @@ body {
     position: relative;
 }
 
+.eventstitle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.eventstitle img {
+    width: 400px;
+    height: auto;
+}
+
 .eventebox {
     width: 70%;
     height: 800px;
@@ -1075,7 +1087,7 @@ body {
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-    padding-top: 230px;
+    padding-top: 80px;
 }
 
 /* 三个主区块 */
