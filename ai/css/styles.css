@@ -294,7 +294,7 @@ body {
 /* BANNER3D */
 .banner3d {
     width: 100%;
-    height: 550px;
+    height: 600px;
     background: linear-gradient(to bottom, rgb(0, 119, 255), rgb(255, 255, 255));
     z-index: 1;
     position: relative;
@@ -303,25 +303,27 @@ body {
 .banner3dbox {
     width: 100%;
     height: auto;
-    top: 500px;
+    top: 360px;
     z-index: 1;
     position: absolute;
 }
 
 .banner3dbox img {
     width: 100%;
-    height: 300px;
+    height: 150px;
+    z-index: 2;
+    padding-bottom: 90px; 
 }
 
-.banner3d h1 {
+.banner3dbox h1 {
     font-size: 40px;
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 100px;
     z-index: 3;
     text-align: center;
 }
 
-.banner3d p {
+.banner3dbox p {
     font-size: 24px;
     color: #ffffff;
     z-index: 3;
@@ -664,7 +666,7 @@ body {
     background: url(../images/kechengbeijing.avif) no-repeat top/cover;
     background-size: cover;
     background-position: center;
-    margin-top: 220px;
+    margin-top: 0px;
 }
 
 .album-containerbox2 {
