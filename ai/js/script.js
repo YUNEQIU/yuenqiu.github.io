@@ -117,10 +117,32 @@ document.querySelectorAll('.video3').forEach(video => {
 
 //课程列表
 
+// 切换菜单展开/收起
 function toggleSubMenu(header) {
   const arrow = header.querySelector(".arrow");
   const submenu = header.nextElementSibling;
-
   submenu.classList.toggle("show");
   arrow.classList.toggle("rotate");
+}
+
+// 加载资源内容到右侧
+function loadContent(type, url) {
+  const preview = document.getElementById("preview");
+
+  if (type === 'video') {
+    preview.innerHTML = `
+      <video controls width="100%" height="610px" style="border-radius: 20px;" autoplay loop>
+        <source src="videos/8.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
+    `;
+
+  } else if (type === 'pdf') {
+    preview.innerHTML = `
+      <iframe src="pdf/test.pdf" width="100%" height="680px" style="border: none; border-radius: 8px;"></iframe>
+    `;
+
+  } else {
+    preview.innerHTML = `<p>无法识别的文件类型。</p>`;
+  }
 }
