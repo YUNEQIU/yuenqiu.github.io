@@ -45,7 +45,7 @@ body {
 
 /* 菜单组 */
 .menu-group {
-    background-color: #fff3e0;
+    background-color: #f3f3f3;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 6px;
@@ -56,7 +56,7 @@ body {
 .menu-header {
     cursor: pointer;
     font-weight: bold;
-    color: #ef6c00;
+    color: #5A048A;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,14 +92,14 @@ body {
 /* 子项样式 */
 .submenu-item {
     padding: 8px;
-    background-color: #ffe0b2;
+    background-color: #e4e4e4;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .submenu-item:hover {
-    background-color: #ffcc80;
+    background-color: #ffffff;
 }
 
 /* 右侧播放区域 */
