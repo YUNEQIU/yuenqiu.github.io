@@ -318,3 +318,12 @@ body {
 .submenu-item:hover {
     background-color: #ffffff;
 }
+
+.submenu-item a {
+    text-decoration: none;
+}
+
+.submenu-item p {
+    font-size: 16px;
+    color: #333;
+}
