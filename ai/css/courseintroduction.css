@@ -229,7 +229,9 @@ body {
 }
 
 .expandmenu-h3 {
+    font-size: 22px;
     margin-bottom: 30px;
+    color: #333333;
 }
 
 .expandmenu-p {
