@@ -68,10 +68,12 @@ body {
     display: inline-block;
     margin-left: 10px;
     transition: transform 0.3s ease;
+    color: #b3b3b3;
 }
 
 .arrow.rotate {
     transform: rotate(90deg);
+    color: #5A048A;
 }
 
 /* 子菜单动画展开 */
