@@ -279,7 +279,7 @@ body {
 .menu-header {
     cursor: pointer;
     font-weight: bold;
-    color: #383838;
+    color: #5A048A;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -291,10 +291,12 @@ body {
     display: inline-block;
     margin-left: 10px;
     transition: transform 0.3s ease;
+    color: #b3b3b3;
 }
 
 .arrow.rotate {
     transform: rotate(90deg);
+    color: #5A048A;
 }
 
 /* 子菜单默认隐藏并可平滑展开 */
