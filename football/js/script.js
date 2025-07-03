@@ -3,24 +3,13 @@ window.onload = () => {
   const slotsContainer = document.getElementById("slots-container");
   const openButton = document.getElementById("open-button");
 
-  const frontImages = [
-    { img: 'images/front1.avif' },
-    { img: 'images/front2.avif' },
-    { img: 'images/front3.avif' },
-    { img: 'images/front4.avif' },
-    { img: 'images/front5.avif' },
-    { img: 'images/front6.avif' },
-    { img: 'images/front7.avif' },
-    { img: 'images/front8.avif' },
-    { img: 'images/front9.avif' },
-    { img: 'images/front10.avif' },
-    { img: 'images/front11.avif' },
-    { img: 'images/front12.avif' }
-  ];
+  const frontImages = Array.from({ length: 12 }, (_, i) => ({
+    img: `images/front${i + 1}.avif`
+  }));
 
   const backImage = 'images/back.avif';
 
-  // 设置打开后固定顺序
+  // 设置打开后的固定顺序（按索引）
   const finalRevealOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
   const cardElements = [];
@@ -34,8 +23,6 @@ window.onload = () => {
       card.draggable = true;
       card.id = `card-${index}`;
       card.dataset.index = index;
-      card.style.opacity = 0;
-      card.style.transform = 'translateY(30px)';
 
       const inner = document.createElement("div");
       inner.className = "card-inner";
@@ -53,10 +40,10 @@ window.onload = () => {
       card.appendChild(inner);
       cardsContainer.appendChild(card);
 
-      // 出现动画
+      // 初始动画
       setTimeout(() => {
+        card.style.transform = 'scale(1)';
         card.style.opacity = 1;
-        card.style.transform = 'translateY(0)';
       }, 200 * index);
 
       card.ondragstart = e => {
@@ -98,7 +85,7 @@ window.onload = () => {
       await new Promise(res => setTimeout(res, 600));
       cards.forEach(card => {
         card.style.transition = "none";
-        card.style.transform = "none";
+        card.style.transform = "scale(1)";
       });
     }
   }
@@ -143,6 +130,8 @@ window.onload = () => {
       const card = document.createElement("div");
       card.className = "card flipped";
       card.style.position = "static";
+      card.style.transform = "scale(1)";
+      card.style.opacity = 1;
 
       const inner = document.createElement("div");
       inner.className = "card-inner";
@@ -178,12 +167,11 @@ window.onload = () => {
     }, 2500);
   }, 5000);
 
-  // ✅ 点击打开后仅执行一次，并禁用按钮
+  // 打开按钮逻辑
   openButton.onclick = () => {
     flipSlotsToFixedOrder();
     openButton.disabled = true;
     openButton.style.opacity = 0.5;
     openButton.style.cursor = "default";
-    openButton.disabled = true;
   };
 };
