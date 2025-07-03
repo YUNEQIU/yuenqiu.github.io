@@ -4,18 +4,18 @@ window.onload = () => {
   const openButton = document.getElementById("open-button");
 
   const frontImages = [
-    { img: 'images/front1.avif', label: '北京国安' },
-    { img: 'images/front2.avif', label: '成都蓉城' },
-    { img: 'images/front3.avif', label: '大连英博' },
-    { img: 'images/front4.avif', label: '河南' },
-    { img: 'images/front5.avif', label: '青岛海牛' },
-    { img: 'images/front6.avif', label: '青岛西海岸' },
-    { img: 'images/front7.avif', label: '山东泰山' },
-    { img: 'images/front8.avif', label: '上海海港' },
-    { img: 'images/front9.avif', label: '上海申花' },
-    { img: 'images/front10.avif', label: '天津津门虎' },
-    { img: 'images/front11.avif', label: '云南玉昆' },
-    { img: 'images/front12.avif', label: '浙江' }
+    { img: 'images/front1.avif' },
+    { img: 'images/front2.avif' },
+    { img: 'images/front3.avif' },
+    { img: 'images/front4.avif' },
+    { img: 'images/front5.avif' },
+    { img: 'images/front6.avif' },
+    { img: 'images/front7.avif' },
+    { img: 'images/front8.avif' },
+    { img: 'images/front9.avif' },
+    { img: 'images/front10.avif' },
+    { img: 'images/front11.avif' },
+    { img: 'images/front12.avif' }
   ];
 
   const backImage = 'images/back.avif';
@@ -42,7 +42,7 @@ window.onload = () => {
 
       const front = document.createElement("div");
       front.className = "card-front";
-      front.innerHTML = `<img src="${item.img}"><div style="font-size:18px">${item.label}</div>`;
+      front.innerHTML = `<img src="${item.img}">`;
 
       const back = document.createElement("div");
       back.className = "card-back";
@@ -149,7 +149,7 @@ window.onload = () => {
 
       const front = document.createElement("div");
       front.className = "card-front";
-      front.innerHTML = `<img src="${frontImages[imgIndex].img}"><div style="font-size:18px">${frontImages[imgIndex].label}</div>`;
+      front.innerHTML = `<img src="${frontImages[imgIndex].img}">`;
 
       const back = document.createElement("div");
       back.className = "card-back";
