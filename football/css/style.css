@@ -1,15 +1,10 @@
 body {
-  background-color: #f0f0f0;
+  background: url(../images/footballfield.avif) no-repeat center center/cover fixed;
+  background-color: #000;
   font-family: sans-serif;
   padding: 20px;
   margin: 0;
   overflow-x: hidden;
-  background: url(../images/footballfield.avif) no-repeat top/cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000000;
 }
 
 .title {
@@ -28,11 +23,11 @@ body {
 .title h1 {
   font-size: 32px;
   color: #ffffff;
+  text-align: center;
 }
 
 .wrapper {
   width: 70%;
-  height: 1000px;
   margin: 0 auto;
 }
 
@@ -46,7 +41,6 @@ body {
 #slots-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* 默认两排6个 */
   gap: 12px;
   width: 100%;
   max-width: 1200px;
@@ -55,7 +49,6 @@ body {
 }
 
 @media (min-width: 2000px) {
-
   #cards-container,
   #slots-container {
     grid-template-columns: repeat(12, 1fr);
@@ -63,7 +56,6 @@ body {
 }
 
 @media (max-width: 999px) {
-
   #cards-container,
   #slots-container {
     grid-template-columns: repeat(3, 1fr);
@@ -75,13 +67,10 @@ body {
   height: 190px;
   perspective: 800px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.slot {
-  width: 150px;
-  height: 190px;
-  perspective: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .card-inner {
@@ -101,29 +90,17 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   position: absolute;
   border: 1px solid #ccc;
   background: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  -webkit-backface-visibility: hidden;
 }
 
-.card-front img {
-  width: 150px;
-  height: 190px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.card-front img:hover {
-  transform: scale(1.1);
-  z-index: 999;
-}
-
+.card-front img,
 .card-back img {
   width: 150px;
   height: 190px;
@@ -131,6 +108,7 @@ body {
   transition: transform 0.3s ease;
 }
 
+.card-front img:hover,
 .card-back img:hover {
   transform: scale(1.1);
   z-index: 999;
@@ -145,13 +123,15 @@ body {
 }
 
 .slot {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: #000000;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 150px;
+  height: 190px;
+  perspective: 800px;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
   opacity: 0;
   transform: translateY(20px);
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .slot.appear {
@@ -168,11 +148,10 @@ body {
   font-size: 24px;
   margin-top: 30px;
   display: none;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transition: opacity 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 #open-button:disabled {
